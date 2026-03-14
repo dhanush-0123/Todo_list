@@ -3,7 +3,6 @@ import java.util.*;
 
 public class todo_list {
 
-    // Update the userChoice function below
     public static String userChoice(int choice, ArrayList<String> taskNames, ArrayList<Date> taskDeadlines, Scanner scanner) {
         if (choice == 1) {
             System.out.print("Enter task name: ");
@@ -19,14 +18,8 @@ public class todo_list {
                 return "";
             }
             
-                                        // Display existing tasks before asking for deletion
             displayTasks(taskNames, taskDeadlines);
                                             
-            // Check if there are tasks to delete
-
-
-            // Display existing tasks before asking for deletion
-
 
             System.out.print("Enter task number to delete: ");
 
@@ -43,9 +36,6 @@ public class todo_list {
 
         return null;
     }
-
-    // Task - Implement the deleteTask method
-    // --------------------------------------------------------------------
     public static void deleteTask(ArrayList<String> taskNames, ArrayList<Date> taskDeadlines, int taskNumber) {
 
         int taskIndex = taskNumber - 1;
@@ -58,8 +48,6 @@ public class todo_list {
         System.out.println("Task '" + removedTask + "' deleted successfully!\n");
         }
     }
-        // --------------------------------------------------------------------
-
     public static void displayTasks(ArrayList<String> taskNames, ArrayList<Date> taskDeadlines) {
         if (taskNames.isEmpty()) {
             System.out.println("No tasks available.\n");
